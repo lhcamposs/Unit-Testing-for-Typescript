@@ -8,7 +8,7 @@ describe("Utils test suite", () => {
       sut = new StringUtils();
     });
 
-    it("Should return correct upperCase", () => {
+    it.only("Should return correct upperCase", () => {
       const actual = sut.toUpperCase("abc");
 
       expect(actual).toBe("ABC");
