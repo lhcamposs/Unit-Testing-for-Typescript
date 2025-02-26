@@ -8,7 +8,7 @@ describe("Utils test suite", () => {
       sut = new StringUtils();
     });
 
-    it.only("Should return correct upperCase", () => {
+    it("Should return correct upperCase", () => {
       const actual = sut.toUpperCase("abc");
 
       expect(actual).toBe("ABC");
@@ -28,7 +28,7 @@ describe("Utils test suite", () => {
       }).toThrow("Invalid argument!");
     });
 
-    it.only("Should throw error on invalid argument - try catch block", (done) => {
+    it("Should throw error on invalid argument - try catch block", (done) => {
       try {
         sut.toUpperCase("");
         done("GetStringInfo should throw error for invalid arg!");
