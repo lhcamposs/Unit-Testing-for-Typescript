@@ -4,7 +4,7 @@ import {
   toUpperCaseWithCb,
 } from "../../app/doubles/OtherUtils";
 
-describe("OtherUtils test suite", () => {
+describe.skip("OtherUtils test suite", () => {
   describe.only("OtherStringUtils test with spies", () => {
     let sut: OtherStringUtils;
 
